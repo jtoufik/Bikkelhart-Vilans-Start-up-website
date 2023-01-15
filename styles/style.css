@@ -1,0 +1,57 @@
+:root{
+    --purple: #5E356F;
+    --yellow: #C4C700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial;
+}
+
+
+body{
+    padding: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@media (min-width: 20em) {
+
+.site-header{
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 15px!important;
+    min-height: 3.75em;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.box-header{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 3.75em;
+}
+
+.box-logo{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 3.75em;
+    width: 25%;
+}
+
+.logo-header{
+    padding-top: 1em;
+    max-height: 3em;
+}
+
+a{
+    cursor: pointer;
+}
+
+}
