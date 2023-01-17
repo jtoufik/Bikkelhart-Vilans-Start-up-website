@@ -8,10 +8,15 @@
 }
 
 @font-face {
-    font-family: DinPro, sans-serif;
-    src: url("../fonts/d_din_pro[82]/otf/D-DIN-PRO-400-Regular.otf");
+    font-family: 'DinPro';
+    src: url("/fonts/D-DIN-PRO-400-Regular.otf");
 }
 
+
+@font-face {
+    font-family: 'DinPro-Bold';
+    src: url("/fonts/D-DIN-PRO-700-Bold.otf");
+}
 html{
     font-family: DinPro;
 }
@@ -89,9 +94,10 @@ a{
 
 h1, h2, h3{
     letter-spacing: .1rem;
+    font-family: DinPro-Bold;
 }
 .h2-top{
-    font-weight: lighter;
+    font-family: DinPro, sans-serif;
 }
 
 .main-title{
@@ -213,7 +219,6 @@ h1, h2, h3{
 .topical-title{
     text-align: center;
     margin: 1.5em;
-    font-family: DINPro, sans-serif;
 }
 
 .article-box1{
