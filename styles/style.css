@@ -230,10 +230,13 @@ h1, h2, h3{
 
 .artical-title{
     height: 10em;
+    margin: 1em;
+
 }
 
-.topic-bg{
-    background-size: cover;
+.topical-second-title{
+    max-width: 14em;
+    font-size: 24px;
 }
 
 
