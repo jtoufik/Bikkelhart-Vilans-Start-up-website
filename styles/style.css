@@ -260,9 +260,56 @@ h1, h2, h3{
     list-style: none;
 }
 
+/* Section Agenda */
 
+.agenda{
+    min-height: 28em;
+    background-color: #F9F9E8;
+    width: 20.6em;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
 
+.agenda-box{
+    display: inline-block;
+    margin: 1em;
 
+}
 
+.title-agenda{
+    font-size: 32px;
+    margin: 0;
+}
+
+.agenda-ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 1em;
+}
+
+.agenda-date{
+    background-color: #fff;
+    display: flex;
+    min-height: 5em;
+    margin-bottom: 1em;
+}
+
+.date-text{
+    margin: 1em;
+    font-family: DinPro-Bold;
+}
+
+.agenda-btn{
+    min-width: 14em;
+    background-color: var(--purple);
+    color: #fff;
+    padding: .7em;
+    font-size: 18px;
+    display: block;
+    margin: 0 auto;
+    border-style: none;
+    border-radius: 15px;
+}
 
 }
