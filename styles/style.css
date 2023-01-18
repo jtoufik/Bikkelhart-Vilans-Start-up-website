@@ -226,10 +226,11 @@ h1, h2, h3{
     border-radius: 10px;
     border: 1px solid rgba(220, 220, 220, 0.633);
     box-shadow:  0px 10px 22px -12px  rgba(0,0,0,0.4);
+    margin-bottom: 2em;
 }
 
 .artical-title{
-    height: 10em;
+    height: 6em;
     margin: 1em;
 
 }
@@ -239,10 +240,25 @@ h1, h2, h3{
     font-size: 24px;
 }
 
+.topical-subtitle{
+    font-family: Literata, sans-serif;
+    font-size: 16px;
+    color: #86688f;
+}
 
+.topical-bottom-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 1em;
+    color: black;
+    font-family: DinPro-Bold;
+    font-size: 16px;
+}
 
-
-
+.topical-li{
+    list-style: none;
+}
 
 
 
