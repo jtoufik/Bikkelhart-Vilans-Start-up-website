@@ -219,6 +219,7 @@ h1, h2, h3{
 .topical-title{
     text-align: center;
     margin: 1.5em;
+    font-size: 24px;
 }
 
 .article-box1{
@@ -311,5 +312,25 @@ h1, h2, h3{
     border-style: none;
     border-radius: 15px;
 }
+
+.article-box2{
+    min-height: 27em;
+}
+
+.product-price{
+    display: inline-block;
+}
+
+.article-box3{
+    min-height: 28.5em;
+}
+
+
+
+
+
+
+
+
 
 }
