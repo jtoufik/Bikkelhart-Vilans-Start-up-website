@@ -22,7 +22,7 @@ html{
 }
 
 
-body{
+header, main{
     padding: 0;
     padding-left: 0.5em;
     padding-right: 0.5em;
@@ -257,9 +257,6 @@ h1, h2, h3{
     font-size: 16px;
 }
 
-.topical-li{
-    list-style: none;
-}
 
 /* Section Agenda */
 
@@ -325,12 +322,50 @@ h1, h2, h3{
     min-height: 28.5em;
 }
 
+/* FOOTER */
 
+ul{
+    list-style: none;
+}
 
+.footer-top{
+    display: inline-block;
+    background-color: var(--purple);
+    color: #fff;
+    width: 100%;
+}
 
+.footer-list{
+    margin-top: 0;
+    padding-top: 1em;
+}
 
+.footer-top-title{
+    font-size: 32px;
+    margin: 0.3em 0 0.3em 0;
+}
 
+.footer-top-subtitle{
+    font-family: Literata, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
+    margin: 0.3em 0 0.3em 0;
+}
 
+.socials{
+    margin-top: 1.5em;
+}
 
+.footer-bottom{
+    background-color: #A68FAD;
+    padding-bottom: 1em;
+}
+
+.footer-bottom-title{
+    display: inline-block;
+    margin: 0;
+    padding-bottom: .5em;
+    font-family: DinPro, sans-serif;;
+}
 
 }
