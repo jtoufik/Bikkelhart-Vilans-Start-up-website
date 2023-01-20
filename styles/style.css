@@ -32,11 +32,6 @@ header, main{
 }
 
 
-
-@media (min-width: 20em) {
-
-    
-
 /* -------- HEADER -------- */
 
 .site-header{
@@ -163,11 +158,10 @@ h1, h2, h3{
 }
 
 .tag-box-bottom{
-    width: 17.7em;
+    max-width: 18em;
     display: block;
     align-content: center;
     margin: 0 auto;
-    margin-left: 2.5em;
     margin-bottom: 1.5em;
 }
 
@@ -368,4 +362,3 @@ ul{
     font-family: DinPro, sans-serif;;
 }
 
-}
