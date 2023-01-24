@@ -12,11 +12,11 @@
     src: url("/fonts/D-DIN-PRO-400-Regular.otf");
 }
 
-
 @font-face {
     font-family: 'DinPro-Bold';
     src: url("/fonts/D-DIN-PRO-700-Bold.otf");
 }
+
 html{
     font-family: DinPro;
 }
@@ -34,38 +34,42 @@ header, main{
 
 /* -------- HEADER -------- */
 
-.site-header{
+header{
     border-bottom: 1px solid #e2e2e2;
-    margin-bottom: 15px!important;
     min-height: 3.75em;
     width: 100%;
     margin: 0 auto;
 }
 
-.box-header{
+.header-box{
     width: 90%;
     margin: 0 auto;
     min-height: 3.75em;
-}
-
-.box-logo{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.header-box > a:nth-of-type(1){
+    display: block;
     margin: 0 auto;
-    min-height: 3.75em;
-    width: 25%;
+    justify-items: center;
+
 }
 
-.logo-header{
-    padding-top: 1em;
-    max-height: 3em;
-}
-
-.search-icon{
+.header-box > a:nth-of-type(2){
     position: absolute;
-    left: 21em;
-    top: 1.1em; 
+    top: 1em;
+    right: -1em;
 }
+
+.logo{
+    padding: 1em;
+    min-height: 4em;
+    max-height: 5em;
+}
+
 
 a{
     cursor: pointer;
@@ -77,29 +81,24 @@ a{
 .main-top{
     min-height: 18em;
     align-items: center;
-    background-image: url("../assets/Design.png");
+    background-image: url("../assets/home-bg.png");
     background-repeat: no-repeat;
-    background-position-y: 10vh;
+    background-size: cover;
+    background-position: center;
 }
 
 .main-title-box{
-    margin-top: 2em;
+    max-width: 14em;
+    margin: 0 auto;
+    text-align: center;
     font-size: 24px;
 }
 
 h1, h2, h3{
     letter-spacing: .1rem;
-    font-family: DinPro-Bold;
-}
-.h2-top{
-    font-family: DinPro, sans-serif;
+    font-family: DinPro-Bold, sans-serif;
 }
 
-.main-title{
-    text-align: center;
-    color: var(--purple);
-    margin: 0;
-}
 
 /* -------- SECTION TAGS -------- */
 .tag-box{
@@ -110,6 +109,8 @@ h1, h2, h3{
     background-color: var(--purple);
     min-height: 4em;
     border-radius: 5px;
+    display: block;
+    align-content: center;
 }
 
 .tag-box-content{
@@ -117,12 +118,14 @@ h1, h2, h3{
     flex-wrap: nowrap;
     margin: 0 auto;
     align-items: center;
-    margin: 1em 0em 1em 1em;
+    padding: 0 1em 0 1em;
     color: white;
+    position: relative;
 }
 
-.tag-title{
 
+.tag-title{
+    font-family: DinPro, sans-serif;
     font-size: 22px;
     display: inline-block;
     vertical-align: middle;
@@ -141,7 +144,9 @@ h1, h2, h3{
 
 .minus{
     height: 1.9em;
-    float: right;
+    position: absolute;
+    right: 1em;
+    top: 1em;
 }
 
 .tag-box-middle{
@@ -149,23 +154,26 @@ h1, h2, h3{
     margin-bottom: 1em;
 }
 
-.tag-title-bottom{
+.tag-box-middle > p{
     font-family: 'Literata', serif;
     text-align: center;
     font-size: 24px;
+    letter-spacing: 0;
     margin: 0;
     padding: 0;
 }
 
+
 .tag-box-bottom{
-    max-width: 18em;
-    display: block;
-    align-content: center;
+    max-width: 24em;
     margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
     margin-bottom: 1.5em;
 }
 
-.btn-tag{
+.tag-box-bottom > button{
     padding: .4em .8em .7em .7em;
     margin: .5em .5em .5em .5em;
     font-family: 16px;
@@ -175,21 +183,18 @@ h1, h2, h3{
     font-weight: light;
 }
 
-.btn-tag-color{
+.tag-box-bottom > button:nth-of-type(2n+4){
     background-color: var(--yellow);
     font-weight: bold;
 }
 
-.btn-tag-bottom{
-    margin-left: 3.7em;
-}
-
-.hashtag{
+button > img{
     position: relative;
     top: 3px;
     right: 3px;
     padding-right: 0.2em;
 }
+
 
 .btn-more{
     display: block;
@@ -362,3 +367,46 @@ ul{
     font-family: DinPro, sans-serif;;
 }
 
+/* CONTAINER QUERY */
+.tag-box-top{
+    container-name: tagbox;
+    container-type: inline-size;
+}
+
+@container tagbox (min-width: 600px){
+    
+    .tag-box-content {
+        width: 60%;
+        padding: 0 2em 0 2em;
+    }
+
+}
+
+
+/* Small screen */
+@media (min-width: 30em) {
+    
+    .tag-box-content {
+        width: 80%;
+        padding: 0 2em 0 2em;
+    }
+
+    .tag-box-bottom{
+        max-width: 24em;
+    }
+
+}
+
+/* Medium screen */
+@media (min-width: 48em) {
+
+    .tag-box-content {
+        width: 60%;
+        padding: 0 2em 0 2em;
+    }
+
+    .tag-box-bottom{
+        max-width: 24em;
+    }
+
+}
