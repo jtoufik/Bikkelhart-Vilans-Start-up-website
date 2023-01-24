@@ -83,6 +83,7 @@ a{
     background-image: url("../assets/home-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: overlay;
     background-position: center;
 }
 
@@ -117,17 +118,18 @@ h1, h2, h3{
     flex-wrap: nowrap;
     margin: 0 auto;
     align-items: center;
-    padding: 0 1em 0 1em;
+    padding: 0 .5em 0 .5em;
     color: white;
     position: relative;
 }
 
 
-.tag-title{
-    font-family: DinPro, sans-serif;
+.tag-box-content > p{
+    font-family: DinPro-Bold, sans-serif;
     font-size: 22px;
-    display: inline-block;
-    vertical-align: middle;
+    letter-spacing: .1rem;
+    /* display: inline-block;
+    vertical-align: middle; */
 }
 
 .total{
@@ -215,7 +217,7 @@ button > img{
 }
 
 
-.topical-title{
+h2{
     text-align: center;
     margin: 1.5em;
     font-size: 24px;
@@ -326,15 +328,17 @@ button > img{
 
 /* FOOTER */
 
-ul{
-    list-style: none;
-}
 
 .footer-top{
     display: block;
     background-color: var(--purple);
     color: #fff;
     width: 100%;
+    padding-bottom: 1em;
+}
+
+ul{
+    list-style: none;
 }
 
 .footer-list{
@@ -342,12 +346,12 @@ ul{
     padding-top: 1em;
 }
 
-.footer-top-title{
+.footer-list > li > h3{
     font-size: 32px;
     margin: 0.3em 0 0.3em 0;
 }
 
-.footer-top-subtitle{
+.footer-top > .footer-list > li > a{
     font-family: Literata, sans-serif;
     font-size: 16px;
     font-weight: lighter;
@@ -358,16 +362,26 @@ ul{
     margin-top: 1.5em;
 }
 
+/* FOOTER-BOTTOM */
+
 .footer-bottom{
     background-color: #A68FAD;
     padding-bottom: 1em;
 }
 
+.footer-bottom > ul > li{
+    margin: 0.3em 0 0.3em 0;
+}
 
-.footer-bottom-title{
-    font-size: 22px;
-    font-family:DinPro-Bold, sans-serif;
+.footer-bottom > ul > li:nth-child(1){
+    font-size: 24px;
+    font-family: DinPro, sans-serif;
+    font-weight: bolder;
+}
 
+.footer-top > .footer-list > li > a{
+    font-family: Literata, sans-serif;
+    font-size: 16px;
 }
 
 /* CONTAINER QUERY */
@@ -443,6 +457,34 @@ ul{
 
 /* Large screen 1120px */
 @media (min-width: 70em) {
+
+    h1{
+        font-size: 2.5em;
+    }
+
+    .main-title-box {
+        max-width: 24em;
+    }
+    h2{
+        font-size: 2em;
+    }
+
+    main{
+        margin-bottom: 2em;
+    }
+
+    .main-top{
+        min-height: 28em;
+        background-size: 70%;
+        background-position: center;
+        background-position-y: 6em;
+    }
+
+    /* SECTION TAGBOX */
+
+    .tag-box{
+        min-height: 24em;
+    }
     
     /* SECTION TOPICAL */
     .topical-box{
@@ -455,6 +497,15 @@ ul{
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 1em;
+    }
+
+    .tag-box-content {
+        width: 35%;
+        padding: 0 2em 0 2em;
+    }
+
+    .tag-box-bottom{
+        max-width: 34em;
     }
 
     .agenda{
