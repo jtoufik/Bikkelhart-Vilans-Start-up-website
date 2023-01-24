@@ -60,8 +60,8 @@ header{
 
 .header-box > a:nth-of-type(2){
     position: absolute;
-    top: 1em;
-    right: -1em;
+    top: 1.5em;
+    right: -.5em;
 }
 
 .logo{
@@ -69,7 +69,6 @@ header{
     min-height: 4em;
     max-height: 5em;
 }
-
 
 a{
     cursor: pointer;
@@ -143,7 +142,7 @@ h1, h2, h3{
 }
 
 .minus{
-    height: 1.9em;
+    height: 2em;
     position: absolute;
     right: 1em;
     top: 1em;
@@ -207,13 +206,14 @@ button > img{
     border: 1px solid #634b6d4d;
 }
 
-/* -------- SECTION NU ACTUEEL -------- */
+/* -------- SECTION TOPICAL -------- */
 
 .topical-box{
     min-height: 30em;
-    width: 20.6em;
+    max-width: 20.5em;
     margin: 0 auto;
 }
+
 
 .topical-title{
     text-align: center;
@@ -229,11 +229,15 @@ button > img{
     margin-bottom: 2em;
 }
 
-.artical-title{
+.article-box1 > img{
+    width: 100%;
+}
+
+.article-box1 > div{
     height: 6em;
     margin: 1em;
-
 }
+
 
 .topical-second-title{
     max-width: 14em;
@@ -262,7 +266,7 @@ button > img{
 .agenda{
     min-height: 28em;
     background-color: #F9F9E8;
-    width: 20.6em;
+    max-width: 20.6em;
     margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 2em;
@@ -271,7 +275,6 @@ button > img{
 .agenda-box{
     display: inline-block;
     margin: 1em;
-
 }
 
 .title-agenda{
@@ -373,7 +376,7 @@ ul{
     container-type: inline-size;
 }
 
-@container tagbox (min-width: 600px){
+@container tagbox (min-width: 37.5em){
     
     .tag-box-content {
         width: 60%;
@@ -383,7 +386,7 @@ ul{
 }
 
 
-/* Small screen */
+/* Small screen 480px */
 @media (min-width: 30em) {
     
     .tag-box-content {
@@ -397,16 +400,98 @@ ul{
 
 }
 
-/* Medium screen */
+/* Medium screen 768px */
 @media (min-width: 48em) {
 
+    /* SECTION TAGBOX */
     .tag-box-content {
         width: 60%;
         padding: 0 2em 0 2em;
     }
 
     .tag-box-bottom{
+        max-width: 28em;
+    }
+
+    /* SECTION TOPICAL */
+
+    .topical-box{
         max-width: 24em;
+    }
+
+    /* .topical-box > div{
+        display: flex;
+        flex-wrap: nowrap;
+    } */
+    .article-box1 {
+        min-width: 24em;
+    }
+
+
+    /* SECTION AGENDA */
+
+    .agenda{
+        mIN-width: 24em;
+    }
+
+
+    .article-box2 {
+        min-height: 28.5em;
+    }
+
+}
+
+/* Large screen 1120px */
+@media (min-width: 70em) {
+    
+    /* SECTION TOPICAL */
+    .topical-box{
+        max-width: 75%;
+        min-height: 36em;
+
+    }
+    .topical-box > div{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 1em;
+    }
+
+    .agenda{
+        max-width: 100%;
+        min-height: 18em;
+    }
+
+    .title-agenda{
+        padding-top: 1em;
+    }
+
+    .agenda-ul{
+        display: flex;
+        justify-content: center;
+        flex-flow: row;
+        max-width: none;
+        gap: 3em;
+    }
+
+    .agenda-box{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .title-agenda{
+        text-align: center;
+    }
+
+    /* FOOTER */
+    .footer-top{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    ul{
+        display: flex;
+        gap: 4em;
     }
 
 }
