@@ -102,8 +102,8 @@ h1, h2, h3{
 
 /* -------- SECTION TAGS -------- */
 .tag-box{
-    min-height: 30em;
     background-color: #FCF7FD;
+    padding-bottom: 2.5em;
 }
 .tag-box-top{
     background-color: var(--purple);
@@ -197,7 +197,7 @@ button > img{
 }
 
 
-.btn-more{
+.tag-box > button{
     display: block;
     margin: 0 auto;
     padding: .8em 4em .8em 4em;
@@ -215,7 +215,11 @@ button > img{
     max-width: 20.5em;
     margin: 0 auto;
 }
-
+/* 
+.topical-box > div{
+    flex-direction: column;
+    display: flex;
+} */
 
 h2{
     text-align: center;
@@ -229,6 +233,9 @@ h2{
     border: 1px solid rgba(220, 220, 220, 0.633);
     box-shadow:  0px 10px 22px -12px  rgba(0,0,0,0.4);
     margin-bottom: 2em;
+
+    /* flex-basis: 100%;
+    width: 100%; */
 }
 
 .article-box1 > img{
@@ -467,6 +474,7 @@ ul{
     }
     h2{
         font-size: 2em;
+        margin: 2em;
     }
 
     main{
@@ -482,14 +490,19 @@ ul{
 
     /* SECTION TAGBOX */
 
-    .tag-box{
-        min-height: 24em;
+
+    .tag-box-middle{
+        margin: 2em;
+    }
+
+    .tag-box-middle > p{
+        font-size: 2em;
     }
     
     /* SECTION TOPICAL */
     .topical-box{
         max-width: 75%;
-        min-height: 36em;
+        min-height: 40em;
 
     }
     .topical-box > div{
@@ -497,15 +510,18 @@ ul{
         flex-wrap: nowrap;
         justify-content: space-between;
         gap: 1em;
+        margin: 0 auto;
+        max-width: 76em;
     }
 
     .tag-box-content {
-        width: 35%;
+        width: 27%;
         padding: 0 2em 0 2em;
     }
 
     .tag-box-bottom{
-        max-width: 34em;
+        max-width: 35em;
+        margin-bottom: 2em;
     }
 
     .agenda{
@@ -514,7 +530,8 @@ ul{
     }
 
     .title-agenda{
-        padding-top: 1em;
+        padding: 1em 0 .5em 0;
+        text-align: center;
     }
 
     .agenda-ul{
@@ -530,9 +547,7 @@ ul{
         margin: 0 auto;
     }
 
-    .title-agenda{
-        text-align: center;
-    }
+
 
     /* FOOTER */
     .footer-top {
@@ -544,12 +559,21 @@ ul{
     }
     ul{
         display: flex;
-        gap: 4em;
+        gap: 2em;
     }
 
     .footer-list{ 
         align-items: center;
     }
+
+    .footer-top > .footer-list > li > h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-top > .footer-list > li > a {
+        font-size: 16px;
+    }
+
 
     .socials{
         margin: 0;
@@ -558,6 +582,7 @@ ul{
     .footer-bottom{
         display: flex;
         justify-content: center;
+        padding-top: 1em;
         margin: 0 auto;
         align-items: center;
     }
