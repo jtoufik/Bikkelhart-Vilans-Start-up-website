@@ -49,19 +49,25 @@ header{
     flex-direction: row;
     align-items: center;
     position: relative;
+    justify-content: space-between;
+}
+
+nav{
+    display: inline-block;
+    width: 33%;
 }
 
 .header-box > a:nth-of-type(1){
-    display: block;
-    margin: 0 auto;
-    justify-items: center;
+    width: 33%;
+    display: flex;
+    justify-content: center;
 
 }
 
 .header-box > a:nth-of-type(2){
-    position: absolute;
-    top: 1.5em;
-    right: -.5em;
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .logo{
@@ -103,7 +109,7 @@ h1, h2, h3{
 /* -------- SECTION TAGS -------- */
 .tag-box{
     background-color: #FCF7FD;
-    padding-bottom: 2.5em;
+    /* padding-bottom: 2.5em; */
 }
 .tag-box-top{
     background-color: var(--purple);
@@ -144,10 +150,30 @@ h1, h2, h3{
 }
 
 .minus{
-    height: 2em;
+    padding: 1em;
+    background-image: url("../assets/Minus.png");
+    background-position: center;
+    border-radius: 5px;
     position: absolute;
     right: 1em;
-    top: 1em;
+    top: 1.2em;
+}
+
+.minus:hover{
+    border: 3px solid red;
+}
+
+/* TOGGLE SECTION */
+
+.toggle-box{
+    height: 24em;
+    transition: .4s ease-out;
+    overflow: hidden;
+}
+
+.toggle-box.collapsed {
+    height: 0;
+    transition: .4s ease-in;
 }
 
 .tag-box-middle{
@@ -197,7 +223,7 @@ button > img{
 }
 
 
-.tag-box > button{
+.toggle-box > button{
     display: block;
     margin: 0 auto;
     padding: .8em 4em .8em 4em;
@@ -475,6 +501,10 @@ ul{
     h2{
         font-size: 2em;
         margin: 2em;
+    }
+
+    .header-box {
+        width: 70%;
     }
 
     main{
