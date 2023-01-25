@@ -52,9 +52,87 @@ header{
     justify-content: space-between;
 }
 
+.header-box > div{
+    width: 33%;}
+
+/* NAVIGATIE BAR */
+
+.header-box > div > nav{
+    display: none;
+}
+
 nav{
     display: inline-block;
     width: 33%;
+}
+
+.menu{
+    position: relative;
+    display: block;
+    width: 3.5em;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.menu .bar, .menu:after, .menu:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: var(--purple);
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.menu.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.menu.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.menu.is-active .bar {
+    opacity: 0;
+}
+
+.mobile-nav{
+    position: fixed;
+    width: 96%;
+    bottom: 100%;
+    min-height: 30vh;
+    padding: .5em 0 1em 0;
+    margin-top: 5.6em;
+    z-index: 2;
+    border-radius: 5px;
+    background-color: #9f86a6d6;
+    backdrop-filter: blur(10px);  
+    -webkit-backdrop-filter: blur(10px);
+    transition: .4s;
+}
+
+.mobile-nav.is-active{
+    bottom: 50%;
+}
+
+.mobile-nav > a{
+    display: block;
+    text-align: left;
+    margin: 2em 2em 1em 2em; 
+    padding: .75em 1em;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-family: DinPro-Bold;
+}
+
+.mobile-nav > a:hover{
+    background-color:  #5f3f6dc4;
+    backdrop-filter: blur(70px);  
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .header-box > a:nth-of-type(1){
@@ -209,6 +287,16 @@ h1, h2, h3{
     background-color: #E5E5E5;
     font-weight: light;
 }
+.tag-box-bottom > button:hover{
+    border: 1px solid rgba(79, 27, 152, 0.421);
+    transform: scale(1.1);
+    box-shadow: 0 8px 13px -4px rgba(185, 182, 182, 0.559);
+}
+
+.tag-box-bottom > button:active{
+    background-color: var(--yellow);
+    font-weight: bold;
+}
 
 .tag-box-bottom > button:nth-of-type(2n+4){
     background-color: var(--yellow);
@@ -232,6 +320,13 @@ button > img{
     color: var(--purple);
     background-color: #fff;
     border: 1px solid #634b6d4d;
+}
+
+.toggle-box > button:hover{
+    border: 1px solid rgb(79, 27, 152);
+    transform: scale(1.1);
+    color: rgb(79, 27, 152);
+    box-shadow: 0 8px 13px -4px rgba(185, 182, 182, 0.559);
 }
 
 /* -------- SECTION TOPICAL -------- */
@@ -506,6 +601,28 @@ ul{
     .header-box {
         width: 70%;
     }
+
+    .header-box > div > nav{
+        display: inline;
+    }
+
+    .header-box > div > nav > a{
+        text-decoration: none;
+        font-family: DinPro, sans-serif;
+        color: var(--purple);
+        padding: 0 .5em 0 .5em;
+        font-size: 20px;
+    }
+
+    .mobile-nav{
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+
 
     main{
         margin-bottom: 2em;
