@@ -5,7 +5,7 @@
 
 ## Beschrijving
 
-In samenwerking met Bikkelhart heb ik een re design gerealiseerd voor de organisatie Vilans. De kennisorganistatie staat voor zorg en ondersteuning. Vilans werkt in verschillende projecten en programma’s aan het verbeteren van de langdurige zorg. Hieronder mijn eindresultaat. 
+In samenwerking met Bikkelhart heb ik een re-design gerealiseerd voor de organisatie Vilans. De kennisorganistatie staat voor zorg en ondersteuning. 
 
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
