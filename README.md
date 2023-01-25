@@ -6,6 +6,7 @@
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een mooie poster visual toe 📸 -->
+![image](https://user-images.githubusercontent.com/112856590/214697052-53c5ea6a-af53-40b6-b3c8-5917263a7756.png)
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
