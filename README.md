@@ -12,7 +12,8 @@ In samenwerking met Bikkelhart heb ik een re design gerealiseerd voor de organis
 ![image](https://user-images.githubusercontent.com/112856590/214697052-53c5ea6a-af53-40b6-b3c8-5917263a7756.png)
 ![image](https://user-images.githubusercontent.com/112856590/214697769-753f58f0-d1c5-4c6f-bfc1-51d325a22721.png)![image](https://user-images.githubusercontent.com/112856590/214697610-5fb6687a-ea04-4c05-9534-bc980b776461.png)![image](https://user-images.githubusercontent.com/112856590/214697968-2d699eeb-21c4-4648-80f5-b607bdbe73d7.png)
 
-<!-- Voeg een link toe naar Github Pages 🌐-->
+
+🌐link: http://bikkelhart-vilans-startup-jtoufik.student.fdnd.nl/
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met JS gedaan en hoe? -->
